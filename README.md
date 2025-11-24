@@ -1,13 +1,21 @@
-# RideShare - Ride Sharing App
+# Ta Safe - Compartilhe trajetos
 
-A modern ride-sharing mobile application built with React Native and Expo, featuring an intuitive interface for finding and booking rides.
+O aplicativo **Ta Safe** surgiu no contexto do desenvolvimento de um projeto prático para a disciplina de Engenharia de Software III, do curso de Sistemas para Internet do IFRS Campus Porto Alegre. O projeto busca conectar todas as pessoas da comunidade acadêmica da instituição por meio de um **aplicativo mobile** com o objetivo de promover o compartilhamento de caronas.
+
+O retorno para casa - principalmente no turno da noite - é uma preocupação para os estudantes que utilizam o transporte público. Além de ser demorado e dispendioso, expõe os estudantes a ambientes de insegurança no centro da cidade. Ao mesmo tempo, também é perceptível, pela quantidade de carros que acessam o estacionamento da instituição, um grande números de integrantes da comunidade acadêmica que poderiam ofertar caronas.
+
+Dessa forma, o aplicativo poderia proporcionar, de forma rápida e prática, o contato entre motoristas e caroneiros, diminuindo a sobrecarga do sistema de transporte público ao utilizar veículos de forma mais racional. Estudantes se deslocam mais rápido, de forma segura e fortalecem os laços entre os membros da comunidade acadêmica. E, como se não bastasse, ainda minimizando a emissão de gases de efeito estufa.
+
+
 
 ## Features
 
-- **Splash Screen**: Beautiful branding screen with RideShare logo
-- **Authentication**: Login screen with email/password and social login options (Google, Apple)
-- **Find Rides**: Browse available rides with search functionality, map view, and detailed ride listings
-- **Profile**: User profile with statistics (rides taken, rating, savings) and menu options
+O aplicativo foi construído com React Native e Expo, apresentando uma interface simples e intuitiva para compartilhar caronas.
+
+- **Splash Screen**: Tela de abertura com o logo do Ta Safe; 
+- **Autenticação**: Tela de login com entrada de email e senha ou autenticação via redes sociais (Google e Apple);
+- **Encontre caronas**: Procukre caronas disponíveis com a funcionalidade de busca por digitação, via mapa ou através da lista detalhada;
+- **Perfil do usuário**: Perfil do usuário com histórico de viagens, configurações, regras de conduta e logout.
 
 ## Tech Stack
 
@@ -18,40 +26,40 @@ A modern ride-sharing mobile application built with React Native and Expo, featu
 - React Native Safe Area Context
 - React Native Gesture Handler
 
-## Project Structure
+## Estrutura do projeto
 
 ```
-├── App.tsx                 # Main app entry point
-├── app.json               # Expo configuration
+├── App.tsx                 # Principal entry point da aplicação
+├── app.json                # Configuração do Expo
 ├── navigation/
-│   └── AppNavigator.tsx   # Navigation setup
+│   └── AppNavigator.tsx    # Navigation setup
 ├── screens/
-│   ├── SplashScreen.tsx   # Loading/splash screen
-│   ├── LoginScreen.tsx    # Authentication screen
-│   ├── FindRidesScreen.tsx # Main rides discovery screen
-│   └── ProfileScreen.tsx  # User profile screen
+│   ├── SplashScreen.tsx    # Splash screen
+│   ├── LoginScreen.tsx     # Tela de autenticação
+│   ├── FindRidesScreen.tsx # Tela de busca de caronas
+│   └── ProfileScreen.tsx   # Tela de perfil do usuário
 ├── constants/
-│   └── Theme.ts           # App theme, colors, spacing
-└── assets/                # Images and icons
+│   └── Theme.ts            # Configurações de aparência
+└── assets/                 # Imagens e ícones
 ```
 
-## Getting Started
+## Instalação
 
-### Prerequisites
+### Requisitos
 
 - Node.js (v20.19.0 or higher recommended)
 - npm or yarn
 - Expo CLI (or use npx)
 - Expo Go app on your mobile device (for testing)
 
-### Installation
+### Instalação
 
-1. Install dependencies:
+1. Instalação de dependências:
 ```bash
 npm install
 ```
 
-2. Start the development server:
+2. Iniciar development server:
 ```bash
 npm start
 ```
@@ -70,64 +78,30 @@ npm start
    - **Find Rides Tab** → Browse and search for rides
    - **Profile Tab** → User profile and settings
 
-## Screen Details
 
-### Splash Screen
-- Dark background with white car icon
-- "RideShare" title
-- "Your journey starts here" tagline
+## Customização
 
-### Login Screen
-- Email and password input fields
-- "Forgot password?" link
-- Social login buttons (Google, Apple)
-- Clean, minimalist design
+### Temas
+Edite `constants/Theme.ts` para customizar:
+- Cores
+- Espaçamentos
+- Fontes
+- Bordas
 
-### Find Rides Screen
-- Search bar for destinations
-- Map view placeholder with markers
-- Scrollable list of available rides
-- Ride cards showing:
-  - Pickup and destination
-  - Time
-  - Price
-  - Available seats
-  - Book button
+### Configuração do aplicativo
+Edite `app.json` para modificar:
+- Nome da aplicação
+- Fundo da Splash Screen
+- Icones
 
-### Profile Screen
-- User information (name, email)
-- Statistics cards (Rides Taken, Rating, Savings)
-- Menu items:
-  - My Rides
-  - Payment Methods
-  - Favorites (with badge)
-  - Settings
-  - Help & Support
-- Logout button
+## Desenvolvimento
 
-## Customization
+O aplicativo utiliza TypeScript para segurança de tipos. Certifique-se de:
+- Tipar todas as props e componentes
+- Seguir o estilo de código existente
+- Usar as constantes do tema para estilização
 
-### Theme
-Edit `constants/Theme.ts` to customize:
-- Colors
-- Spacing
-- Font sizes
-- Border radius
+## Licença
 
-### App Configuration
-Update `app.json` to modify:
-- App name
-- Splash screen background
-- Icons
-
-## Development
-
-The app uses TypeScript for type safety. Make sure to:
-- Type all props and components
-- Follow the existing code style
-- Use the theme constants for styling
-
-## License
-
-This project is created for educational purposes.
+Este projeto foi criado para fins educacionais.
 
